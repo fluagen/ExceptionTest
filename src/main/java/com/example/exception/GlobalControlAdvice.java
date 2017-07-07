@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @ControllerAdvice
 public class GlobalControlAdvice {
 
-    @ExceptionHandler(TestException.class)
+    @ExceptionHandler(TestException2.class)
     @ResponseBody
-    public String exceptionHandler(TestException e) {
+    public String exceptionHandler(TestException2 e) {
         e.printStackTrace();
         return e.getMessage();
     }
